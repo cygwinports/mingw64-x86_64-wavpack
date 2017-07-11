@@ -2,7 +2,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-wavpack"
-VERSION=4.70.0
+VERSION=5.1.0
 RELEASE=1
 CATEGORY="Audio"
 SUMMARY="Hybrid lossless audio codec for Win64 toolchain"
@@ -15,5 +15,4 @@ HOMEPAGE="http://www.wavpack.com/"
 SRC_URI="http://www.wavpack.com/wavpack-${VERSION}.tar.bz2"
 SRC_DIR="wavpack-${VERSION}"
 
-CYGCONF_ARGS="--enable-mmx"
 MAKEOPTS+=" bin_PROGRAMS= man_MANS= "
